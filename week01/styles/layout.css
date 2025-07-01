@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+  background-color: #13859b;
+  color: #f0f0f0;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Header */
+header {
+  padding: 20px;
+  background-color: #0e5e6f;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header > div {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+  background-color: #062b32;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 10px 0;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Main Layout */
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.main-content {
+  background-color: #d1dfe3;
+  color: #000;
+  padding: 20px;
+  height: 320px;
+}
+
+aside {
+  background-color: #ffffff;
+  color: #000;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #0e5e6f;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
