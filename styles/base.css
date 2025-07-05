@@ -18,7 +18,7 @@ nav > a:hover {
     color: #093e47;
 }
 
-main {
+.content-grid {
     display: grid;
     grid-template-areas:
         "heading heading"
