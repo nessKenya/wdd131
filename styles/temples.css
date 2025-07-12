@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.figures {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem 0 0 0;
+}
+
+figure {
+    border: 1px solid #0e5e6f;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #0e5e6f10;
+    margin: auto 0;
+}
+
+figure > img {
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 1rem;
+}
+
+main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#menu > img {
+    height: 50px;
+    width: 50px;
+}
+
+#menu-items {
+    flex-direction: column;
+    background-color: #093e47;
+    position: fixed;
+    margin-top: 100px;
+    width: 85%;
+    border-radius: 1rem;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#menu-items > a {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
+}

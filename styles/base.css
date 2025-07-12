@@ -60,13 +60,13 @@ nav > a:hover {
     background-color: #0e5e6f;
 }
 
-.card-heading>h2{
+.card-heading > h2 {
     font-size: 1.125rem;
     font-weight: bold;
     color: white;
 }
 
-.separator{
+.separator {
     width: 80%;
 }
 
@@ -124,6 +124,10 @@ footer {
 
 .flex-around {
     justify-content: space-around;
+}
+
+.flex-btn {
+    justify-content: space-between;
 }
 
 .align-center {
