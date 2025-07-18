@@ -1,0 +1,133 @@
+:root{
+    --theme-color: #1E3F66;
+    --theme-color-light: #1E3F66FA;
+    --font-base: "Comfortaa", sans-serif;
+}
+
+body {
+    font-family: var(--font-base);
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+}
+
+header {
+    color: var(--theme-color);
+    text-align: center;
+    border-bottom: 0.5rem solid var(--theme-color);
+}
+
+picture{
+    border-bottom: .25rem solid var(--theme-color);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    position: relative;
+}
+
+section > div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    border: .5px solid var(--theme-color-light);
+}
+
+footer {
+    background-color: var(--theme-color);
+    text-align: center;
+    padding: 1.5rem;
+    color: white;
+}
+
+span.icon {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card {
+    display: none;
+}
+
+#weather-icon {
+    height: 5rem;
+    width: 5rem;
+    vertical-align: middle;
+    margin-bottom: 2rem;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    line-height: 1.5rem;
+}
+
+.row span:first-child {
+    font-weight: bold;
+    text-align: right;
+    text-transform: capitalize;
+}
+
+.row span:last-child {
+    margin-left: 1rem;
+}
+
+.col {
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    section > div {
+        border: 2px solid var(--theme-color-light);
+    }
+
+    #place-info {
+        display: none;
+    }
+
+    .card {
+        position: absolute;
+        background: #FFFD;
+        padding: 2.5rem 0.5rem;
+        border-radius: 1.5rem;
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-header {
+        border-radius: 4rem;
+        background-color: var(--theme-color-light);
+        color: white;
+        padding: 1.25rem 2rem;
+        margin-top: -4.75rem;
+        width: 70%;
+    }
+
+    #data-card {
+        top: 0;
+        left: 0;
+        margin: 3rem 0 0 1rem;
+    }
+
+    #weather-card {
+        bottom: 0;
+        right: 0;
+        margin: 0 1rem 1rem 0;
+    }
+
+    #weather-card > h2::after {
+        content: "  ☀️";
+        font-size: 2rem;
+    }
+}
