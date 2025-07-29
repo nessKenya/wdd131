@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F2F2F2;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #005A9C;
+  margin-top: 0;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background-color: #005A9C;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.site-header .logo {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.sitename {
+  margin: 0;
+  color: #FBFBFB;
+}
+
+.tagline {
+  font-size: 1rem;
+  margin: 0.5rem auto 0;
+  max-width: 600px;
+}
+
+/* Section Styles */
+.section {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #005A9C;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.site-footer p:last-child {
+  font-size: 0.85rem;
+  color: #e0e0e0;
+  margin-top: 0.25rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1, h2, .tagline {
+    text-align: center;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .schema {
+    max-height: 300px;
+  }
+}
