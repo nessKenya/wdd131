@@ -1,0 +1,127 @@
+:root{
+    --theme-color: #093e47;
+    --theme-color-light: #093e4733;
+    --font-base:  "Libre Baskerville", serif;
+    --font-heading: "League Spartan", sans-serif;
+}
+
+body {
+    font-family: var(--font-base);
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    text-align: center;
+}
+
+form {
+    background-color: var(--theme-color-light);
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+form>div>p,label {
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+input, textarea, select {
+    border: 1px solid var(--theme-color);
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+}
+
+input[type=text], input[type=date], select, textarea {
+    padding: .875rem;
+}
+
+input[type=checkbox], input[type=radio] {
+    transform: scale(1.5);
+}
+
+input[type=submit] {
+    background: var(--theme-color);
+    font: var(--font-heading);
+    color: white;
+    padding: .75rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.help-text {
+    font-size: 0.75rem;
+    font-weight: lighter;
+}
+
+footer {
+    background-color: var(--theme-color);
+    text-align: center;
+    padding: 1.5rem;
+    color: white;
+}
+
+#heading {
+    background-color: var(--theme-color);
+    color: white;
+    padding: 0.25rem 2rem;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem;
+    color: #093e47;
+}
+
+#banner img {
+    width: 120px;
+    height: 120px;
+    margin-top: 2rem;
+    animation: pulse 1.5s infinite;
+}
+
+#no-of-reviews {
+   background: var(--theme-color);
+   color: white;
+   padding: 0.5rem;
+   border-radius: 1rem;
+   box-shadow: 0 .25rem .5rem var(--theme-color);
+}
+
+@media (min-width: 768px) {
+    body {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #banner img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
