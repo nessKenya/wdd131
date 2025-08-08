@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Find remote jobs" />
+        <meta name="author" content="Nelson Muchonji Bifwoli" />
+    	<title>S2W Jobs</title>
+    	<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/s2w.css">
+        <script src="./scripts/jobs.js" defer></script>
+        <script src="./scripts/nav.js" defer></script>
+        <script src="./scripts/getdates.js" defer></script>
+    </head>
+    <body>
+        <header class="container">
+            <span>
+                <img id="logo" src="./images/logo-lg.webp" alt="skills 2 work logo">
+            </span>
+            <nav id="navigation" class="d-none">
+                <a href="./index.html">home</a>
+                <a href="./courses.html">courses</a>
+                <a href="./jobs.html">jobs</a>
+            </nav>
+            <div id="menu">
+                <img
+                    id="hamburger-icon"
+                    src="./images/hamburger-menu.svg"
+                    alt="hamburger menu"
+                />
+                <img
+                    id="times-icon"
+                    src="./images/times.svg"
+                    alt="times"
+                    class="d-none"
+                />
+            </div>
+        </header>
+        <main class="container">
+            <h1>Jobs Listing</h1>
+            <section>
+                <form id="jobfilter">
+                    <label for="jobcategory">Filter Jobs By: </label>
+                    <select name="jobcategory" id="jobcategory">
+                        <option value="" disabled selected>Select A Job Category</option>
+                    </select>
+                    <input type="submit" value="Filter">
+                </form>
+                <span id="jobcount" class="highlight"></span>
+            </section>
+            <section id="jobs-listing">
+
+                <div class="job-card">
+                    <div class="job-banner">
+                        &#x1F4BC;
+                    </div>
+                    <div>
+                        <p>Software Engineer Python</p>
+                        <p>Chigago, USA</p>
+                        <span>Full-Time</span>
+                    </div>
+                </div>
+                <div class="job-card">
+                    <p>Software Engineer Python</p>
+                    <p>Chigago, USA</p>
+                    <span>Full-Time</span>
+                </div>
+                <div class="job-card">
+                    <p>Software Engineer Python</p>
+                    <p>Chigago, USA</p>
+                    <span>Full-Time</span>
+                </div>
+                <div class="job-card">
+                    <p>Software Engineer Python</p>
+                    <p>Chigago, USA</p>
+                    <span>Full-Time</span>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>
+                &COPY; <span id="currentyear"></span>
+                <span class="text-secondary text-lg">⌚︎</span> Nelson Muchonji
+                Bifwoli <span class="text-secondary text-lg">⌚︎</span> Kenya
+            </p>
+            <p id="lastmodified"></p>
+            <p id="lastvisit"></p>
+        </footer>
+    </body>
+</html>
