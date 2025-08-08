@@ -313,7 +313,7 @@ select {
         border-radius: 1rem;
         top: auto;
         left: auto;
-        padding: auto;
+
         transform: translate(0%, -0%);
         text-transform: capitalize;
         z-index: 99;
